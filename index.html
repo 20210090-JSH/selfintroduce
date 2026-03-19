@@ -5,6 +5,8 @@
     <style>
         .title2 {color:rgb(242, 140, 37);}
         #title1:hover #point {color:rgb(255, 3, 3);}
+
+       .btn { color: red;}
     </style>
 </head>
 <body>
@@ -12,7 +14,10 @@
       <h1 id="title1">안녕하세요. <span id="point">20210090 정승혜</span>입니다.</h1>
       <p>제발 저를 뽑아주세요...</p>
     </div>
-
+    <div><img src="오랑이.jpg" alt="내 사진" width="200">
+         <img id="img2" src="말풍선.jpg" width="200" style="display:none;">
+    </div>
+    <div><button class="btn" onclick="showImage()">*클릭*</button></div>
     <div>
       <h1 class="title2">1. 나는 이런 사람</h1>
       <p>- 영어영문학 + 뉴미디어콘텐츠 융합전공</p>
@@ -40,6 +45,11 @@
     <div>
       <h1>감사합니다. 좋은 하루 되세요:D</h1>
     </div>
-    
+
+ <script>
+  function showImage() {
+  document.getElementById("img2").style.display = "inline";
+  }
+</script>
 </body>
 </html>
